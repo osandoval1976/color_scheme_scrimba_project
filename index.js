@@ -1,4 +1,16 @@
-const test = document.getElementById("color")
-fetch("https://www.thecolorapi.com/id?format=svg&hex=24B1E0", {method:post})
-.then(res=>res.json())
-.then(data => test.innerHTML = data)
+const postArray = []
+const test = document.getElementById("test")
+const options=''
+const url = ''
+fetch("https://www.thecolorapi.com/id?hex=24B1E0", {method: "POST"})
+.then(response=>response.json())
+.then(data =>{
+
+    let html=''
+    for(let post of data){
+        html +=`
+           <p>${post}</p>
+        `
+    }
+    document.getElementById("test").innerHTML = data
+})
