@@ -1,17 +1,15 @@
 const postArray = []
-const test = document.getElementById("test")
-const options=''
-const url = ''
-fetch("https://www.thecolorapi.com/id?hex=24B1E0")
+const color = document.getElementById('color').value
+fetch("https://www.thecolorapi.com/scheme")
 .then(response=>response.json())
 .then(data =>{
-
-    let html=''
-    for(let post of data){
-        html +=`
-           <p>${post}</p>
+    let html =''
+    for(let post of  data){
+        html += `
+        <p>${post.hex}<p>
         `
-        document.getElementById("test").innerHTML = html
-    }
+        document.getElementById('test').innerHTML = html
     
+    
+}
 })
