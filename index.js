@@ -34,6 +34,7 @@ fetch("https://www.thecolorapi.com/scheme?hex=24B1E0&mode=triad&count=6", info)
 .then(post=> {
 pushUpdated={
     method: 'PUT', 
+    mode: "cors",
     headers:{"Content-type":"application/json"},
     body:JSON.stringify(post)
 }
