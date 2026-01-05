@@ -11,5 +11,4 @@ fetch(`https://www.thecolorapi.com/scheme?hex=${inputUpdated}&mode=${selectItem}
        document.getElementById('post').style.background = data.colors.hex
    
  })
- 
- }
+}
