@@ -63,10 +63,19 @@ body {
     margin:5px 8px;
     
     
+}
 
-  }
-
-  .post{
-    margin-top: 100px;
+.color-bg{
+    display: block;
+    margin-top: 450px;
     margin-left: 140px;
+    
+}
+
+.text-colors{
+    display: block;
+    margin-top: 150px;
+    margin-left: 80px;
+    padding: 0 2px 0 2px;
+    
 }
