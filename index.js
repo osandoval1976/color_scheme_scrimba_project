@@ -7,8 +7,11 @@ const selectItem =document.getElementById('nameList').value.toLowerCase()
 fetch(`https://www.thecolorapi.com/scheme?hex=${inputUpdated}&mode=${selectItem}&count=5`)
   .then(response=>response.json())
   .then(data=>{
-    console.log(data)
-       document.getElementById('post').style.background = data.colors.hex
-   
- })
+   for(let i =0; i< 5;i++){ 
+  document.getElementById('color-bg').style.background += data.colors[i]["hex"].value 
+  document.getElementById('text-colors').textContent += data.colors[i]["hex"].value
+  
+  }
+  
+  })
 }
