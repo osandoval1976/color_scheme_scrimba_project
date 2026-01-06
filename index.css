@@ -9,6 +9,8 @@ body {
     height: auto;
     width: 100%;
 }
+
+
 .title{
     display: flex;
     margin: 10px 35px;
@@ -17,65 +19,20 @@ body {
     margin: 12px 2px;
     border: 2px;
 }
-.magenta,
-.yellow, 
-.black,
-.green, 
-.purple{
-    display: inline-block;
-    height: 300px;
-    width: 17%;
-    margin:2px, 0;
-    
-    
-}
 
-.magenta{
-    background-color: #F55A5A;
-}
 
-.yellow{
-    background-color: #FBF3AB;
-    
-}
-
-.black{
-    background-color: #2B283A;
-    
-}
-
-.green{
-    background-color: #AAD1B6;
-    
-}
-
-.purple{
-    background-color: #A626D3;
-    
-}
-
-.text-1,
-.text-2, 
-.text-3,
-.text-4, 
-.text-5{
-    display: flex;
-    margin:5px 8px;
-    
-    
-}
 
 .color-bg{
-    display: block;
-    margin-top: 450px;
-    margin-left: 140px;
-    
+    display: inline;
+    margin-bottom: 30px;
+    padding-bottom:120px;
+    padding-right: 10px;
+    background-repeat: repeat y;  
 }
 
 .text-colors{
     display: block;
-    margin-top: 150px;
-    margin-left: 80px;
-    padding: 0 2px 0 2px;
+    margin-top: 170px;
+    
     
 }
