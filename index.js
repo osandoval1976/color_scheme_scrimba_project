@@ -7,7 +7,7 @@ const selectItem =document.getElementById('nameList').value.toLowerCase()
 fetch(`https://www.thecolorapi.com/scheme?hex=${inputUpdated}&mode=${selectItem}&count=5`)
   .then(response=>response.json())
   .then(data=>{
-    const container =  document.getElementById('color-btn')
+    const container =  document.getElementById('color-id')
     const items = container.querySelectorAll('.color-bg')
     for(let i =0;i<items.length; i++){
       const item = items[i]
